@@ -1,0 +1,49 @@
+# ========================
+# Environment & Secrets
+# ========================
+# NEVER commit these! They hold your passwords, API keys, and secret hashes.
+.env
+.env.*
+*.pem
+
+# ========================
+# Python & uv
+# ========================
+# Byte-compiled / optimized files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual Environments (uv defaults to .venv)
+.venv/
+venv/
+env/
+
+# uv cache (uv.lock SHOULD be committed, so it's not here)
+.uv-cache/
+
+# ========================
+# Testing & Coverage
+# ========================
+.pytest_cache/
+.coverage
+htmlcov/
+*.log
+
+# ========================
+# OS & Editor Files
+# ========================
+# Mac
+.DS_Store
+# Windows
+Thumbs.db
+
+# VS Code / PyCharm settings
+.vscode/
+.idea/
+
+# ========================
+# Docker
+# ========================
+# If you ever mount local data volumes in docker-compose, ignore them
+pgdata/
